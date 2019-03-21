@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+</head>
+<body>
+<a href="/">HOME</a>
+<table>
+    <thead>
+    <tr>
+        <th>
+            METHOD
+        </th>
+        <th>
+            COUNT
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for method, value in counters.items() %}
+        <tr>
+            <td>{{ method }}:</td>
+            <td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</body>
+</html>
